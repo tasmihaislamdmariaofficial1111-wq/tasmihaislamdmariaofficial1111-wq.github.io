@@ -1,30 +1,112 @@
-<div class="links-group">
-            <a href="#" class="cv-link">→ Download Academic CV (PDF)</a>
-            <a href="https://blogspot.com" target="_blank" class="blog-link">→ Explore My Creative Laboratory (Blogspot) ↗</a>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Tracks & Coursework</title>
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --surface: #141b2d;
+            --border: #24324f;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #00f2fe; 
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        h1 { font-size: 2.2rem; font-weight: 800; margin-top: 1rem; }
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 20px;
+        }
+        .track-header {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            border-bottom: 1px dashed var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .assignment-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        .assignment-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .assignment-meta {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        .assignment-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← Return to Dossier</a>
+        <h1>Academic Tracks & Document Repository</h1>
     </header>
 
-    <main class="grid">
-        <!-- TCDD Pillar -->
-        <div class="card">
-            <div class="card-title">01 / TCDD Track</div>
-            <p>Technical Communication & Digital Documentation. Cross-sections of interface architecture, textual user guides, and information design structures.</p>
-            <a href="tracks.html#tcdd">View Technical Docs →</a>
-        </div>
+    <main>
+        <!-- TCDD TRACK SECTION -->
+        <section id="tcdd">
+            <div class="track-header">Technical Communication & Digital Documentation (TCDD)</div>
+            
+            <div class="assignment-block">
+                <div class="assignment-title">Assignment Title 01: Information Architecture Sample</div>
+                <div class="assignment-meta">Course Module Ref: National University English Department</div>
+                <p class="assignment-text">
+                    [This is a placeholder space. When you are ready, you will replace this text with your first course assignment or essay text. You can add as many assignment blocks here as you need.]
+                </p>
+            </div>
+        </section>
 
-        <!-- DCLEAD & MULTICOM Pillar -->
-        <div class="card">
-            <div class="card-title">02 / Media & Leadership</div>
-            <p>DCLEAD & MultiCom. Academic arguments centered on global platform ethics, narrative dynamics, media trends, and digital transformations.</p>
-            <a href="tracks.html#media">View Leadership Essays →</a>
-        </div>
-
-        <!-- Visual Semiotics / Art Pillar -->
-        <div class="card">
-            <div class="card-title">03 / Visual Semiotics</div>
-            <p>Exploring narrative through art. A digital gallery of drawings and paintings paired with structural descriptions analyzing visual layout and design composition.</p>
-            <a href="gallery.html">View Art Gallery →</a>
-        </div>
+        <!-- DCLEAD & MULTICOM TRACK SECTION -->
+        <section id="media">
+            <div class="track-header">Digital Communication Leadership & Global Media (DCLEAD / MultiCom)</div>
+            
+            <div class="assignment-block">
+                <div class="assignment-title">Assignment Title 01: Platform Politics & Narrative Framing</div>
+                <div class="assignment-meta">Course Module Ref: National University English Department</div>
+                <p class="assignment-text">
+                    [This is a placeholder space. Replace this text later with your media analysis papers or literature assignments that study communication methods.]
+                </p>
+            </div>
+        </section>
     </main>
 
 </body>
