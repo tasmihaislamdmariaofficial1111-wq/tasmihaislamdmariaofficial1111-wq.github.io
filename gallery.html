@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Narratives & Structural Design</title>
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --surface: #141b2d;
+            --border: #24324f;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #00f2fe; 
+            --chic-rose: #ff4081; 
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        h1 { font-size: 2.2rem; font-weight: 800; margin-top: 1rem; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+        .gallery-container { display: flex; flex-direction: column; gap: 3rem; }
+        .gallery-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.5rem;
+        }
+        .artwork-title { font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; }
+        .artwork-title span { color: var(--chic-rose); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.2rem; }
+        .desc { color: var(--text-muted); font-size: 0.95rem; margin-top: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1rem; }
+        .curator-note { margin-top: 1rem; font-size: 0.9rem; color: var(--text-main); }
+        .curator-note strong { color: var(--accent); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; display: inline-block; margin-right: 5px; }
+        img.art-frame {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            margin: 1rem 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← Return to Dossier</a>
+        <h1>Atmospheric Fragments & Subtext</h1>
+        
+        <div class="manifesto-box" style="margin-top: 1.5rem; padding: 1rem; border: 1px dashed var(--border); background: rgba(255,255,255,0.02); border-radius: 4px;">
+            <span style="color: var(--chic-rose); font-size: 0.75rem; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 0.5rem;">The Resource Manifesto</span>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+                These pieces represent an exploration in <strong>resource-constrained design</strong>. Created entirely using minimalist analogue media—basic pastels, crayons, and markers—without financial overhead. Inspired by visual dialogues found across digital networks, these works serve as tactile atmospheric compositions mapping internal mental states.
+            </p>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        
+        <!-- Piece 01: The Window -->
+        <div class="gallery-item">
+            <div class="artwork-title"><span>Fragment 01</span>The Threshold of Introspection</div>
+            
+            <!-- Placeholder Image Asset -->
+            <img src="window-art.jpg" alt="Atmospheric visual composition" class="art-frame"><p class="desc">This scene captures an unspoken narrative—the delicate threshold between internal quietude and a vast, external expanse. The lone silhouette introduces a heavy atmospheric pause, urging the viewer to look beyond the immediate boundaries of the frame and step into a space of complete perspective change.</p>
+            
+            <div class="curator-note">
+                <strong>Design Analysis // MultiCom:</strong> An exercise in spatial contrast and environmental tension. By manipulating light source vectors from the moonlit exterior against a shadowed background, the canvas functions as a catalyst for viewer empathy and mindfulness.
+            </div>
+        </div>
+
+        <!-- Piece 02: The Wild Deer -->
+        <div class="gallery-item">
+            <div class="artwork-title"><span>Fragment 02</span>The Silent Horizon</div>
+            
+            <!-- Placeholder Image Asset -->
+            <img src="deer-art.jpg" alt="Nature reflection visual art" class="art-frame">
+            
+            <p class="desc">A vivid snapshot celebrating organic presence and absolute stillness. The solitary animal outline breaks a warm, mist-laden sky, creating an immersive moment that calls for raw environmental gratitude and an appreciation of untouched natural grace.</p>
+            
+            <div class="curator-note">
+                <strong>Structural Design // TCDD:</strong> A study in minimalist silhouette and structural weight. This piece shows how isolating a single focal element within a soft background gradient creates an effortless visual hierarchy, guiding viewer attention directly to the core message.
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
